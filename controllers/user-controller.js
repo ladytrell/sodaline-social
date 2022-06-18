@@ -74,7 +74,6 @@ const userController = {
 
     // Add friend by id
     addFriend({ params, body }, res) {
-        console.log("params", params);
         User.findOneAndUpdate(
             { _id: params.id }, 
             { $push: { friends: params.friendID } }, 
@@ -92,7 +91,6 @@ const userController = {
 
     // Add friend by id
     deleteFriend({ params, body }, res) {
-        console.log("params", params);
         User.findOneAndUpdate(
             { _id: params.id }, 
             { $pull: { friends: params.friendID } }, 
@@ -106,8 +104,7 @@ const userController = {
             res.json(dbUserData);
         })
         .catch(err => res.status(400).json(err));
-    }
-      
+    }      
 }
 
 module.exports = userController;
