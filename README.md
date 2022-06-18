@@ -14,7 +14,7 @@
   ## Installation
 
  - Clone or download the application repository 
-[Sodaline Social](https://github.com/ladytrell/team-directory)
+[Sodaline Social](https://github.com/ladytrell/sodaline-social)
  - Download and Install node.js if not already installed.  [node.js](https://nodejs.org/en/) for your platform:  [How to Install Node.js](https://nodejs.dev/learn/how-to-install-nodejs)
 
   ## Usage
